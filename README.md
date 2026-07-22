@@ -10,13 +10,13 @@ A collection of all [Material Design](https://pictogrammers.com/library/mdi/) SV
 - 🔗 No dependencies
 - 📐 Designed as a companion library for [SvgNode](https://github.com/Maran23/svgnode) for use in JavaFX applications – but works in any Java context
 
-## Requirements
+## Installation
+
+### Requirements
 
 | Dependency | Version |
 |------------|---------|
 | Java       | 25+     |
-
-## Installation
 
 ### Maven
 
@@ -72,7 +72,7 @@ SvgNode node = new SvgNode(MDIInterface.HOME, 32);
 <?import tools.maran.svgnode.SvgNode?>
 <?import tools.maran.svg.materialdesign.MDIInterface?>
 
-<SvgNode size="32" svgColor="RED">
+<SvgNode size="32" color="RED">
     <path>
         <MDIInterface fx:constant="HOME"/>
     </path>
