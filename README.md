@@ -1,6 +1,7 @@
 # SVG Material Design
 
-A collection of all [Material Design](https://pictogrammers.com/library/mdi/) SVG icon paths as Java enum constants – ready to be used in any Java program.
+A collection of all [Material Design](https://pictogrammers.com/library/mdi/) SVG icon paths as Java enum constants --
+ready to be used in any Java program.
 
 ![Material Design](https://github.com/Maran23/svgnode/blob/demo/demo/library_materialdesign.webp)
 
@@ -8,7 +9,8 @@ A collection of all [Material Design](https://pictogrammers.com/library/mdi/) SV
 
 - 🎨 All Material Design icons as Java enums
 - 🔗 No dependencies
-- 📐 Designed as a companion library for [SvgNode](https://github.com/Maran23/svgnode) for use in JavaFX applications – but works in any Java context
+- 📐 Designed as a companion library for [SvgNode](https://github.com/Maran23/svgnode) for use in JavaFX applications --
+  but works in any Java context
 
 ## Installation
 
@@ -24,14 +26,14 @@ A collection of all [Material Design](https://pictogrammers.com/library/mdi/) SV
 <dependency>
     <groupId>tools.maran</groupId>
     <artifactId>svg-materialdesign</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
 ### Gradle
 
 ```groovy
-implementation 'tools.maran:svg-materialdesign:1.0.0'
+implementation 'tools.maran:svg-materialdesign:1.0.1'
 ```
 
 ## Usage
@@ -53,7 +55,7 @@ import tools.maran.svg.materialdesign.MDIWorld;
 
 SVG svg = MDIInterface.HOME;
 // Switch from interface to world SVG.
-svg = MDIWorld.HOME_CITY;
+svg =MDIWorld.HOME_CITY;
 ```
 
 ### Usage with [SvgNode](https://github.com/Maran23/svgnode)
@@ -66,6 +68,7 @@ import tools.maran.svg.materialdesign.MDIInterface;
 
 SvgNode node = new SvgNode(MDIInterface.HOME, 32);
 ```
+
 #### FXML
 
 ```xml
@@ -78,6 +81,16 @@ SvgNode node = new SvgNode(MDIInterface.HOME, 32);
     </path>
 </SvgNode>
 ```
+
+## Changelog
+
+### Version 1.0.1
+
+- Add `MDIWorld.EXIT_RUN`, which did not render correctly before JavaFX 28-ea+11 (fixed in JavaFX)
+
+### Version 1.0.0
+
+- Initial release (Material Design Icons 7.4.47)
 
 ## Acknowledgements
 
